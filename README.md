@@ -1,15 +1,13 @@
-1
-
 Table of Contents
 
-1. **[Introduction]**
-2. **[DataSynthesis]**
-3. **[ModelBuilding]**
-4. **[EvaluationsandResults]**
-5. **[Conclusions and future work]**
-6. **[References]**
+1. **[Introduction](#_TOC_250002)**[3](#_TOC_250002)
+2. **[DataSynthesis](#_TOC_250001)**[3](#_TOC_250001)
+3. **ModelBuilding** 5
+4. **[EvaluationsandResults](#_TOC_250000)**[8](#_TOC_250000)
+5. **[Conclusions andfuturework](#_bookmark0)**9
+6. **[References](#_bookmark1)**[9](#_bookmark1)
 
-1.
+
 # Introduction
 
   1.
@@ -28,7 +26,7 @@ Our goal for this project is to forecast production or farm yield based on other
 
 For this analysis we have taken agricultural dataset and climate dataset from Kaggle and merged them based on the common fields to predict crop yield. We built 5 different models and compared the results to find the best model for our analysis.
 
-1.
+
 # DataSynthesis
 
   1.
@@ -69,7 +67,7 @@ processing plants present in the location/ farm |
 | Precipitation | Rainfall at the hour |
 | wind\_speed | Wind speed at that hour |
 
-  1.
+ 
 ## DataProcessing:
 
 1. Converted date, timestamp to datetimeformat
@@ -95,7 +93,7 @@ processing plants present in the location/ farm |
   - Morning Evening Night: Segregated time into categoricalvariables
   - Splitting the data for validation Data split is done based on time stamp. For train data we used 2016 data and for test data, 2017 data is used for all months and compared yields based onmonths.
 
-1. **MODEL BUIDLING**
+**MODEL BUIDLING**
 
 ![Shape1](RackMultipart20221118-1-zgqd17_html_144cfedbee828c61.gif)
 
@@ -109,7 +107,6 @@ After dummification, Linear Regression model is performed which resulted in **me
 
 ![](RackMultipart20221118-1-zgqd17_html_7ffe781dde56ec21.jpg)
 
-  1.
 ### ![](RackMultipart20221118-1-zgqd17_html_1bf5c1d1da086d53.png)DecisionTree
 
 Decision Tree is performed without outliers and with hyperparameter and we get to compare the results.
@@ -119,14 +116,13 @@ Decision Tree is performed without outliers and with hyperparameter and we get t
 ![](RackMultipart20221118-1-zgqd17_html_3e17d9a36a714a94.png) ![](RackMultipart20221118-1-zgqd17_html_407979bead747366.png) ![](RackMultipart20221118-1-zgqd17_html_292bf13c1e8ffe.jpg) ![Shape2](RackMultipart20221118-1-zgqd17_html_4d9eade9ce4fe936.gif)
  ![Shape3](RackMultipart20221118-1-zgqd17_html_2c5613a28780cb46.gif)
 
-  1.
+
 ### ![](RackMultipart20221118-1-zgqd17_html_759fd6647db6ce03.png)RandomForest
 
 Before changes we got Mean absolute error of 587.83 and mean squared error was 5812902.98
 
 ![](RackMultipart20221118-1-zgqd17_html_ee3027c5a6974064.png)
 
-  1.
 ### ![](RackMultipart20221118-1-zgqd17_html_61a47ada3f509d8c.png)XGBoost
 
 Preprocessing: Label Encoding done on columns dayofyear, day and hour
@@ -135,13 +131,12 @@ Preprocessing: Label Encoding done on columns dayofyear, day and hour
 
 ![](RackMultipart20221118-1-zgqd17_html_a158180788939891.png)
 
-1.
 # Evaluations andResults
 
   1.
 ### EvaluationMethods
 
-1. Compared the errors of all the models performed and evaluated theresults
+Compared the errors of all the models performed and evaluated theresults
 
 | Linear Regression | Decision Tree without outlier | Decision Tree with Hyperparameter | Random Forest | XG Boost |
 | --- | --- | --- | --- | --- |
@@ -149,7 +144,7 @@ Preprocessing: Label Encoding done on columns dayofyear, day and hour
 
 When compared to all other models, the **Decision Tree without outliers** produces the least error, hence it is the best model to utilize for agricultural yield production.
 
-1. Compared Yield produced - Actual Versus OriginalDemand:
+Compared Yield produced - Actual Versus OriginalDemand:
 
 Predicted yield for every month for 2017 is presented below
 
@@ -173,7 +168,7 @@ Extra Yield is calculated by comparing actual consumption to the original demand
     - Density Based clustering Technique can be used on Crop yieldPrediction.
     - Factors affecting agricultural yield output can be identified and worked towards anefficient method of yield prediction using the density-based clusteringtechnique.
 
-1. References
+References
 
 - [https://realpython.com/linear-regression-in-python/](https://realpython.com/linear-regression-in-python/)
 - [https://towardsdatascience.com/random-forest-in-python-24d0893d51c0](https://towardsdatascience.com/random-forest-in-python-24d0893d51c0)
