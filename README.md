@@ -1,27 +1,17 @@
-Table of Contents
-
-1. **[Introduction](#_TOC_250002)**[3](#_TOC_250002)
-2. **[DataSynthesis](#_TOC_250001)**[3](#_TOC_250001)
-3. **ModelBuilding** 5
-4. **[EvaluationsandResults](#_TOC_250000)**[8](#_TOC_250000)
-5. **[Conclusions andfuturework](#_bookmark0)**9
-6. **[References](#_bookmark1)**[9](#_bookmark1)
-
-
 # Introduction
 
-  1.
+
 ## Objective:
 
 Our goal for this project is to forecast production or farm yield based on other variables such as location, season,crop,andlandarea.Wewanttoknowhowcropyieldisaffectedbytheseasonandgeography,as both impact Yield. We also want to find how variation of yield is by the area undercultivation.
 
-  1.
+
 ## Problems to beaddressed:
 
     - Investigate the data and create newfeatures
     - Estimate each farm crop's production.
     - Create a sourcing plan for an ingredient based on expected demand for the next fewmonths.
-  2.
+
 ## Approach:
 
 For this analysis we have taken agricultural dataset and climate dataset from Kaggle and merged them based on the common fields to predict crop yield. We built 5 different models and compared the results to find the best model for our analysis.
@@ -29,7 +19,6 @@ For this analysis we have taken agricultural dataset and climate dataset from Ka
 
 # DataSynthesis
 
-  1.
 ## DataOverview
 
 Ourdataisaround2080580bytesinsize,with17properties.Farmdata,traindata, andweatherdata,all of which contain a combination of category and numeric variables, are contained in three datasets. The attribute yield is an independent variable, while the rest of the attributes are dependent. We have used the data from year 2016 as training data and used the 2017 data to as test data to dopredictions.
@@ -133,7 +122,7 @@ Preprocessing: Label Encoding done on columns dayofyear, day and hour
 
 # Evaluations andResults
 
-  1.
+
 ### EvaluationMethods
 
 Compared the errors of all the models performed and evaluated theresults
@@ -152,7 +141,7 @@ Predicted yield for every month for 2017 is presented below
 
 ![](RackMultipart20221118-1-zgqd17_html_ad34c5158f7da028.jpg)
 
-4.2. Results and Findings
+**Results and Findings**
 
 Extra Yield is calculated by comparing actual consumption to the original demand, making it easier to predict and develop crops to meet future needs.
 
@@ -168,7 +157,7 @@ Extra Yield is calculated by comparing actual consumption to the original demand
     - Density Based clustering Technique can be used on Crop yieldPrediction.
     - Factors affecting agricultural yield output can be identified and worked towards anefficient method of yield prediction using the density-based clusteringtechnique.
 
-References
+**References**
 
 - [https://realpython.com/linear-regression-in-python/](https://realpython.com/linear-regression-in-python/)
 - [https://towardsdatascience.com/random-forest-in-python-24d0893d51c0](https://towardsdatascience.com/random-forest-in-python-24d0893d51c0)
