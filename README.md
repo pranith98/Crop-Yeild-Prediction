@@ -84,41 +84,44 @@ processing plants present in the location/ farm |
 
 **MODEL BUIDLING**
 
-![Shape1](RackMultipart20221118-1-zgqd17_html_144cfedbee828c61.gif)
+![alt text](./assets/1.jpg)
 
 Dummification is performed on columns such as is\_month\_end, is\_month\_start, day\_name,time\_of\_day
 
-![](RackMultipart20221118-1-zgqd17_html_a8e82e24c2a40888.png)
+![alt text](./assets/2.jpg)
 
 After dummification, Linear Regression model is performed which resulted in **mean absolute error** of
 
 573.68 and mean squared error is 5663965.13.
 
-![](RackMultipart20221118-1-zgqd17_html_7ffe781dde56ec21.jpg)
+![alt text](./assets/3.jpg)
 
-### ![](RackMultipart20221118-1-zgqd17_html_1bf5c1d1da086d53.png)DecisionTree
+### ![alt text](./assets/4.jpg)DecisionTree
 
 Decision Tree is performed without outliers and with hyperparameter and we get to compare the results.
 
-### ![](RackMultipart20221118-1-zgqd17_html_5d117a4dedd82c15.png)Without Outliers:
+### Without Outliers:
+![alt text](./assets/5.jpg)
 
-![](RackMultipart20221118-1-zgqd17_html_3e17d9a36a714a94.png) ![](RackMultipart20221118-1-zgqd17_html_407979bead747366.png) ![](RackMultipart20221118-1-zgqd17_html_292bf13c1e8ffe.jpg) ![Shape2](RackMultipart20221118-1-zgqd17_html_4d9eade9ce4fe936.gif)
- ![Shape3](RackMultipart20221118-1-zgqd17_html_2c5613a28780cb46.gif)
+### Hyperparameter:
+![alt text](./assets/6.jpg)
 
+### Learning Curve:
+![alt text](./assets/7.jpg)
 
-### ![](RackMultipart20221118-1-zgqd17_html_759fd6647db6ce03.png)RandomForest
+### RandomForest
 
 Before changes we got Mean absolute error of 587.83 and mean squared error was 5812902.98
 
-![](RackMultipart20221118-1-zgqd17_html_ee3027c5a6974064.png)
+![alt text](./assets/8.jpg)
 
-### ![](RackMultipart20221118-1-zgqd17_html_61a47ada3f509d8c.png)XGBoost
+### XGBoost:
 
 Preprocessing: Label Encoding done on columns dayofyear, day and hour
 
 **MAE value for XG Boost** is 575.912
 
-![](RackMultipart20221118-1-zgqd17_html_a158180788939891.png)
+![alt text](./assets/9.jpg)
 
 # Evaluations andResults
 
@@ -139,7 +142,7 @@ Predicted yield for every month for 2017 is presented below
 
 ### EXPECTED YIELD FOR EACH MONTH IN 2017:
 
-![](RackMultipart20221118-1-zgqd17_html_ad34c5158f7da028.jpg)
+![alt text](./assets/10.jpg)
 
 **Results and Findings**
 
