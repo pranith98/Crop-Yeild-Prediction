@@ -84,36 +84,34 @@ processing plants present in the location/ farm |
 
 **MODEL BUIDLING**
 
-![alt text](./assets/1.jpg)
+## LINEAR REGRESSION MODEL
 
 Dummification is performed on columns such as is\_month\_end, is\_month\_start, day\_name,time\_of\_day
 
+![alt text](./assets/1.jpg)
+
+After dummification, Linear Regression model is performed which resulted in **mean absolute error** of 573.68 and mean squared error is 5663965.13.
+
 ![alt text](./assets/2.jpg)
 
-After dummification, Linear Regression model is performed which resulted in **mean absolute error** of
-
-573.68 and mean squared error is 5663965.13.
-
-![alt text](./assets/3.jpg)
-
-### ![alt text](./assets/4.jpg)DecisionTree
+### DecisionTree
 
 Decision Tree is performed without outliers and with hyperparameter and we get to compare the results.
 
 ### Without Outliers:
-![alt text](./assets/5.jpg)
+![alt text](./assets/3.jpg)
 
 ### Hyperparameter:
-![alt text](./assets/6.jpg)
+![alt text](./assets/4.jpg)
 
 ### Learning Curve:
-![alt text](./assets/7.jpg)
+![alt text](./assets/5.jpg)
 
 ### RandomForest
 
 Before changes we got Mean absolute error of 587.83 and mean squared error was 5812902.98
 
-![alt text](./assets/8.jpg)
+![alt text](./assets/6.jpg)
 
 ### XGBoost:
 
@@ -121,7 +119,7 @@ Preprocessing: Label Encoding done on columns dayofyear, day and hour
 
 **MAE value for XG Boost** is 575.912
 
-![alt text](./assets/9.jpg)
+![alt text](./assets/7.jpg)
 
 # Evaluations andResults
 
@@ -142,7 +140,7 @@ Predicted yield for every month for 2017 is presented below
 
 ### EXPECTED YIELD FOR EACH MONTH IN 2017:
 
-![alt text](./assets/10.jpg)
+![alt text](./assets/8.jpg)
 
 **Results and Findings**
 
